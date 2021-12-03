@@ -2,13 +2,11 @@
 
 <h1 class="text-center">Timeline</h1>
 <div class="container" id="posts">
-  {{!-- <div class="center">    --}}
-  <form id="new-post-form" action="/posts" method="post">
+ 
+  <form align="center" id="new-post-form" action="/posts" method="post">
   <label for="message">What's on your mind? </label>  
-  {{!-- </div>  --}}
   <input id="message" type="text" name="message" placeholder="Write something..." value="">
   <input type="submit" class="submit" value="Post">
-  {{!-- </div>  --}}
 </form>
 
   {{#each posts}}
