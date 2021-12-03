@@ -14,8 +14,10 @@
   {{#each posts}}
   <div class="post-container mb-4">
     <div class="row no-gutters border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative post" id="{{@index}}">
+
       <div class="col p-4 d-flex flex-column position-static">
         <h6 class="mb-2 user_name font-weight-bold">{{this.user_name}}:</h6>
+
         <p class="card-text mb-2 message">{{this.message}} </p>
         
         <form id="comment-form" class="comment invisible border-top pt-1" action="/comments" method="post">
